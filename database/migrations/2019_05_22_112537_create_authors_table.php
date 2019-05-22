@@ -17,7 +17,7 @@ class CreateAuthorsTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string('name');
-            $table->timestamp('dob');
+            $table->timestamp('dob')->nullable();
         });
     }
 
